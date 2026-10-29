@@ -1,0 +1,60 @@
+# Operating System Files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Production & Build Outputs
+target/
+**/target/
+.next/
+**/.next/
+out/
+build/
+**/build/
+dist/
+
+# Test Documents (PDF lokal agar tidak terunggah ke repo publik/pribadi)
+*.pdf
+dokumen_asli_*.pdf
+dokumen_signed_*.pdf
+
+# Environment & Local Configs
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & Editors
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.springBeans
+.sts4-cache
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar

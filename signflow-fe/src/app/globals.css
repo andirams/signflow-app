@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #006767;
+    --primary-container: #008282;
+    --bsi-teal: #00A0A0;
+    --bsi-dark-teal: #006767;
+    --bsi-gold: #F0B43C;
+    --bsi-gold-container: #fcbf46;
+    --surface: #f7f9fc;
+    --surface-container-low: #f2f4f7;
+    --surface-container-lowest: #ffffff;
+    --on-surface: #191c1e;
+    --on-surface-variant: #3d4949;
+    --outline: #6d7a79;
+    --outline-variant: #bcc9c8;
+  }
+
+  body {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

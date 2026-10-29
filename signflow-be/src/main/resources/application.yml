@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: signflow-be
+  
+  # Database configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/signflow_db
+    username: signflow_user
+    password: signflow_password
+    driver-class-name: org.postgresql.Driver
+
+  # JPA / Hibernate configuration
+  jpa:
+    hibernate:
+      ddl-auto: update # Otomatis membuat/update tabel dari Entity
+    show-sql: true # Menampilkan query SQL di console untuk debugging
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+# Upload File Configuration (Untuk menampung PDF besar)
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 25MB
+
+server:
+  port: 8080
